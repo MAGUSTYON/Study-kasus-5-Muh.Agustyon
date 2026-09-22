@@ -1,23 +1,27 @@
-def pemesanan_hotel(jenis_kamar, lama_menginap):
+def pemesanan_hotel ( jenis_kamar, check_in, check_out ) :
     if jenis_kamar == "Standard":
         tarif = 200000
     elif jenis_kamar == "Deluxe":
         tarif = 350000
     else:
-        return 0
-      
-    total_biaya = tarif * lama_menginap
-  
+        print ( "kamar tidak tersedia")
+        return
 
-    print("\n=== DATA PEMESANAN HOTEL ===")
-    print("Jenis kamar       :", jenis_kamar)
-    print("Lama menginap     :", lama_menginap, "malam")
-    print("Total biaya       : Rp", total_biaya)
+    lama_menginap = check_out - check_in
+    biaya = tarif * lama_menginap
 
-    return total_biaya
+    print ( "==== DATA PEMESANAN HOTEL ====")
+    print ( "Jenis kamar       :", jenis_kamar)
+    print ( "Tanggal check-in  :", check_in)
+    print ( "Tanggal check-out :", check_out)
+    print ( "Lama menginap     :", lama_menginap, "malam")
+    print ( "Total biaya       : Rp", biaya)
+
+    return biaya
 
 
-jenis_kamar = input("Masukkan jenis kamar (Standard/Deluxe): ")
-lama_menginap = int(input("Masukkan lama menginap (malam): "))
+jenis_kamar = input( "Masukkan jenis kamar (Standard/Deluxe) : ")
+checkin = int ( input( "Masukkan tanggal check-in: " ) )
+checkout = int ( input( "Masukkan tanggal check-out :" ) )
 
-pemesanan_hotel(jenis_kamar, lama_menginap)
+pemesanan_hotel ( jenis_kamar, checkin, checkout )
