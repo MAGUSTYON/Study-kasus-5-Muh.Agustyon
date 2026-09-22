@@ -21,7 +21,7 @@ def pemesanan_hotel ( jenis_kamar, check_in, check_out ) :
 
 
 jenis_kamar = input( "Masukkan jenis kamar (Standard/Deluxe) : ")
-checkin = int ( input( "Masukkan tanggal check-in: " ) )
-checkout = int ( input( "Masukkan tanggal check-out :" ) )
+check_in = int ( input( "Masukkan tanggal check-in: " ) )
+check_out = int ( input( "Masukkan tanggal check-out :" ) )
 
 pemesanan_hotel ( jenis_kamar, checkin, checkout )
