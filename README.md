@@ -5,4 +5,5 @@ lanjut untuk menghitung biaya nya yaitu dengan mengali tarif dan lama menginapny
 lanjut ketika di run maka user akan disuruh untuk menginput kamar standard atau deluxe lalu menginput tanggal cehckin dan cehckout, lalu akan muncul data pemesanan hotelnya
 
 berikut outputnya:
+
 <img width="510" height="158" alt="image" src="https://github.com/user-attachments/assets/da2dc6b6-bd1b-4a5f-85e3-3f6f19be93b7" />
